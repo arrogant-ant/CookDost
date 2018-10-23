@@ -1,11 +1,18 @@
-package inc.iris.cookdost;
+package inc.iris.cookdost.views;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.firebase.ui.auth.IdpResponse;
+
+import inc.iris.cookdost.R;
+import inc.iris.cookdost.utils.Constants;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -36,9 +43,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        mTextMessage = findViewById(R.id.message);
+        BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+    public static Intent createIntent(Context context, IdpResponse response) {
+        Intent homeIntent = new Intent(context, HomeActivity.class);
+        homeIntent.putExtra(Constants.USER_IDP, response);
+        return homeIntent;
     }
 
 }

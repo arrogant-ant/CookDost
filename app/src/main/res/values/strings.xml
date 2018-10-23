@@ -4,4 +4,11 @@
     <string name="title_trending">Trending</string>
     <string name="title_fav">Favourite</string>
     <string name="title_activity_main">MainActivity</string>
+    <!-- fb login -->
+    <string name="facebook_application_id" translatable="false">581862808893337</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb581862808893337</string>
+    <string name="sign_in_cancelled">Please Sign In to continue.</string>
+    <string name="no_internet_connection">No Internet Connection. Please try after sometime.</string>
+    <string name="unknown_error">Unable to logging. Please try again.</string>
 </resources>

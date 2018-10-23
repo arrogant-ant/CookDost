@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--<meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false"/>--> <!-- disable facebook automatic logging -->
         <activity
-            android:name=".HomeActivity"
+            android:name=".views.HomeActivity"
             android:label="@string/app_name" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".views.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

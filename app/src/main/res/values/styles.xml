@@ -7,5 +7,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!-- firebase ui -->
+    <style name="FirebaseLoginTheme" parent="FirebaseUI">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:windowBackground">@drawable/com_facebook_profile_picture_blank_portrait</item>-->
+    </style>
 
 </resources>
